@@ -1,7 +1,7 @@
 {
   "name": "@app-up/react-native",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "React Native utility for connecting to the AppUp service",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
