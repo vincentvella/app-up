@@ -1,17 +1,39 @@
 {
   "name": "@appup/network",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
-  "main": "dist/index.js",
+  "description": "JS Utility for connecting to the AppUp service",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "lib/",
+    "src/"
+  ],
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "develop": "nodemon -e js,ts --watch src --exec \"yarn run build && yarn run start\""
+    "test": "jest",
+    "typescript": "tsc --noEmit",
+    "lint": "eslint --ext .js,.ts,.tsx .",
+    "prepare": "bob build",
+    "release": "release-it",
+    "develop": "nodemon -e js,ts --watch src --exec \"yarn run prepare\""
   },
-  "dependencies": {},
+  "keywords": [
+    "react-native"
+  ],
   "devDependencies": {
-    "@types/node": "^13.11.0",
-    "nodemon": "^2.0.3",
-    "typescript": "^3.8.3"
+    "@react-native-community/bob": "^0.14.0",
+    "@types/jest": "^25.1.2",
+    "typescript": "^3.7.5"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }

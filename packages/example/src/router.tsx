@@ -14,26 +14,26 @@ const Router = () => {
         <Stack.Screen
           name="home"
           component={Home}
-          options={{ headerTitle: "AppUp Examples" }}
+          options={{ headerTitle: 'AppUp Examples' }}
         />
         <Stack.Screen
           name="class"
           component={ClassComponent}
-          options={{ headerTitle: "Class", headerBackTitle: 'Examples' }}
+          options={{ headerTitle: 'Class', headerBackTitle: 'Examples' }}
         />
         <Stack.Screen
           name="functional"
           component={FunctionalComponent}
-          options={{ headerTitle: "Functional", headerBackTitle: 'Examples' }}
+          options={{ headerTitle: 'Functional', headerBackTitle: 'Examples' }}
         />
         <Stack.Screen
           name="custom"
           component={CustomComponent}
-          options={{ headerTitle: "Custom", headerBackTitle: 'Examples' }}
+          options={{ headerTitle: 'Custom', headerBackTitle: 'Examples' }}
         />
       </Stack.Navigator>
     </>
   );
-}
+};
 
 export default Router;

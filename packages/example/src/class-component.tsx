@@ -8,10 +8,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  }
+  },
 });
 
-class Class extends React.Component<{ loading: boolean, data: any }> {
+class Class extends React.Component<{ loading: boolean; data: any }> {
   render() {
     const { loading, data } = this.props;
     return (
@@ -20,7 +20,7 @@ class Class extends React.Component<{ loading: boolean, data: any }> {
         <Text>{JSON.stringify(data)}</Text>
         {loading && <ActivityIndicator />}
       </View>
-    )
+    );
   }
 }
 

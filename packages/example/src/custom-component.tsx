@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  }
+  },
 });
 
 const CustomComponent = () => {
@@ -26,19 +26,19 @@ const CustomComponent = () => {
       } catch (err) {
         console.log(err);
       }
-    }
+    };
     checkVersion();
     return () => {
       mounted = false;
-    }
-  }, [])
+    };
+  }, []);
 
   return (
     <View style={styles.container}>
       <Text>Custom Component</Text>
       <Text>{JSON.stringify(data)}</Text>
     </View>
-  )
-}
+  );
+};
 
 export default CustomComponent;

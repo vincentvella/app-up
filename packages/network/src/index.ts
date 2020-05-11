@@ -1,9 +1,11 @@
-const baseUrl = 'https://appup-version-service.herokuapp.com/sync';
+const baseUrl = 'https://sync.appup.dev/sync';
 
 async function makeRequest(appId: string, platform: string) {
   try {
     if (platform === 'android' || platform === 'ios') {
-      const response = await fetch(`${baseUrl}?appId=${appId}&platform=${platform}`);
+      const response = await fetch(
+        `${baseUrl}?appId=${appId}&platform=${platform}`
+      );
       const responseJson = await response.json();
       return responseJson;
     }

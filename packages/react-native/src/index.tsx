@@ -25,7 +25,7 @@ function useAppUp(appId: string, platform: string) {
   React.useEffect(() => {
     let mounted = true;
     setLoading(true);
-    makeRequest(appId, platform).then(appData => {
+    makeRequest(appId, platform).then((appData: any) => {
       if (mounted) {
         setData(appData);
         setLoading(false);

@@ -1,14 +1,25 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "esModuleInterop": true,
-        "target": "es6",
-        "noImplicitAny": true,
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "outDir": "dist",
-        "baseUrl": "./src",
-        "skipLibCheck": true,
-        "resolveJsonModule": true
-    }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@appup/network": ["./src/index"]
+    },
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noStrictGenericChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
+  }
 }

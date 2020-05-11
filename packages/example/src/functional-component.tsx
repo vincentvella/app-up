@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  }
+  },
 });
 
 const Functional = () => {
@@ -19,7 +19,7 @@ const Functional = () => {
       <Text>{JSON.stringify(data)}</Text>
       {loading && <ActivityIndicator />}
     </View>
-  )
-}
+  );
+};
 
 export default Functional;
