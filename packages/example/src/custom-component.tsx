@@ -1,5 +1,5 @@
 import * as React from 'react';
-import makeRequest from '@appup/network';
+import makeRequest from '@app-up/network';
 import { Platform, View, StyleSheet } from 'react-native';
 import { Text } from 'react-native-paper';
 
@@ -19,7 +19,7 @@ const CustomComponent = () => {
       try {
         // Not a recommended pattern but wanted to show that the packages were published separately
         // so if you found yourself in a scenario where you couldn't use a React Hook/FC then you
-        // could in theory just access the network request from the @appup/network package.
+        // could in theory just access the network request from the @app-up/network package.
         // This is purely a convenience.
         const response = await makeRequest('8rDOMaWCWSywEFmaSbZl', Platform.OS);
         if (mounted) setData(response);

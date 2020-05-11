@@ -1,7 +1,7 @@
 {
-  "name": "@appup/network",
+  "name": "@app-up/network",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "JS Utility for connecting to the AppUp service",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",

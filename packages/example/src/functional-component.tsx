@@ -1,5 +1,5 @@
 import * as React from 'react';
-import useAppUp from '@appup/react-native';
+import useAppUp from '@app-up/react-native';
 import { Platform, View, StyleSheet } from 'react-native';
 import { Text, ActivityIndicator } from 'react-native-paper';
 

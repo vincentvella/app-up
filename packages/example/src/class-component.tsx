@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ActivityIndicator, Text } from 'react-native-paper';
 import { View, Platform, StyleSheet } from 'react-native';
-import { withAppUp } from '@appup/react-native';
+import { withAppUp } from '@app-up/react-native';
 
 const styles = StyleSheet.create({
   container: {

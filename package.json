@@ -1,5 +1,5 @@
 {
-  "name": "appup",
+  "name": "app-up",
   "private": true,
   "workspaces": {
     "packages": [
@@ -14,11 +14,11 @@
   },
   "homepage": "https://github.com/appup-react-native#readme",
   "scripts": {
-    "develop-network": "yarn workspace @appup/network develop",
-    "develop-react-native": "yarn workspace @appup/react-native develop",
+    "develop-network": "yarn workspace @app-up/network develop",
+    "develop-react-native": "yarn workspace @app-up/react-native develop",
     "develop": "run-p develop-*",
-    "typescript-network": "yarn workspace @appup/network typescript",
-    "typescript-react-native": "yarn workspace @appup/react-native typescript",
+    "typescript-network": "yarn workspace @app-up/network typescript",
+    "typescript-react-native": "yarn workspace @app-up/react-native typescript",
     "typescript": "run-p typescript-*",
     "lint": "eslint --ext .js,.ts,.tsx packages/*/src/*"
   },

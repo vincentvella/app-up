@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@appup/react-native": ["./src/index"],
-      "@appup/network": ["../network/src/index"],
+      "@app-up/react-native": ["./src/index"],
+      "@app-up/network": ["../network/src/index"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

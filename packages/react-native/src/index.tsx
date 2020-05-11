@@ -1,5 +1,5 @@
 import * as React from 'react';
-import makeRequest from '@appup/network';
+import makeRequest from '@app-up/network';
 
 export type AppUpProps = {
   appId: string;

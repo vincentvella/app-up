@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@appup/network": ["./src/index"]
+      "@app-up/network": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

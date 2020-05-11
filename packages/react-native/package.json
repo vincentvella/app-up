@@ -1,5 +1,5 @@
 {
-  "name": "@appup/react-native",
+  "name": "@app-up/react-native",
   "version": "0.1.0",
   "private": true,
   "description": "React Native utility for connecting to the AppUp service",
@@ -22,7 +22,7 @@
     "react-native"
   ],
   "dependencies": {
-    "@appup/network": "0.1.0"
+    "@app-up/network": "0.1.0"
   },
   "devDependencies": {
     "@react-native-community/bob": "^0.14.0",
