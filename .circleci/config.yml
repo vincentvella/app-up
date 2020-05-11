@@ -17,6 +17,6 @@ jobs:
           paths: .
 
 workflows:
-    build-and-test:
+    install-dependencies:
       jobs:
-        - build-and-test
+        - install-dependencies
