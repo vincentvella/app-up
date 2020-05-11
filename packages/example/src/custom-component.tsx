@@ -21,8 +21,8 @@ const CustomComponent = () => {
         // so if you found yourself in a scenario where you couldn't use a React Hook/FC then you
         // could in theory just access the network request from the @appup/network package.
         // This is purely a convenience.
-        const data = await makeRequest('8rDOMaWCWSywEFmaSbZl', Platform.OS);
-        if (mounted) setData(data);
+        const response = await makeRequest('8rDOMaWCWSywEFmaSbZl', Platform.OS);
+        if (mounted) setData(response);
       } catch (err) {
         console.log(err);
       }

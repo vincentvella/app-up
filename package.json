@@ -20,7 +20,7 @@
     "typescript-network": "yarn workspace @appup/network typescript",
     "typescript-react-native": "yarn workspace @appup/react-native typescript",
     "typescript": "run-p typescript-*",
-    "lint": "eslint --ext .js,.ts,.tsx ."
+    "lint": "eslint --ext .js,.ts,.tsx packages/*/src/*"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",

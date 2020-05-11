@@ -34,7 +34,7 @@ function useAppUp(appId: string, platform: string) {
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [appId, platform]);
   return { data, loading };
 }
 
