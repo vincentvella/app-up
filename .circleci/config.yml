@@ -12,10 +12,6 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn
-      - persist_to_workspace:
-          root: /tmp/dir
-          paths:
-            - .
 
 workflows:
     install-dependencies:
