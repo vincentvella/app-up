@@ -13,8 +13,9 @@ jobs:
           steps:
             - run: yarn
       - persist_to_workspace:
-          root: ~/repo
-          paths: .
+          root: /tmp/dir
+          paths:
+            - .
 
 workflows:
     install-dependencies:
