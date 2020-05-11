@@ -14,9 +14,7 @@
   "scripts": {
     "test": "jest",
     "typescript": "tsc --noEmit",
-    "lint": "eslint --ext .js,.ts,.tsx .",
     "prepare": "bob build",
-    "release": "release-it",
     "develop": "nodemon -e js,ts --watch src --exec \"yarn run prepare\""
   },
   "keywords": [
