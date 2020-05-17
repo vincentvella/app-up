@@ -7,3 +7,5 @@ lib/
 packages/network/coverage/
 
 .vscode/
+
+packages/react-native/coverage/
