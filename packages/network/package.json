@@ -1,6 +1,7 @@
 {
   "name": "@app-up/network",
   "version": "0.1.0",
+  "license": "MIT",
   "private": false,
   "description": "JS Utility for connecting to the AppUp service",
   "main": "lib/commonjs/index.js",
@@ -23,6 +24,9 @@
   "devDependencies": {
     "@react-native-community/bob": "^0.14.0",
     "@types/jest": "^25.1.2",
+    "fetch-mock": "^9.9.0",
+    "jest": "^26.0.1",
+    "query-string": "^6.12.1",
     "typescript": "^3.7.5"
   },
   "@react-native-community/bob": {
@@ -32,6 +36,11 @@
       "commonjs",
       "module",
       "typescript"
+    ]
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/lib/"
     ]
   }
 }
