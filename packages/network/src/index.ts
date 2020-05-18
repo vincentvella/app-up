@@ -1,1 +1,3 @@
-export { default as makeRequest } from './make-request';
+import makeRequest from './make-request';
+
+export default makeRequest;
