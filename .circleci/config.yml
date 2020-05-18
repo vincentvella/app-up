@@ -6,6 +6,8 @@ orbs:
 
 jobs:
   test:
+    docker:
+      - image: circleci/node:dubnium
     steps:
       - checkout
       - restore_cache:
@@ -33,5 +35,6 @@ jobs:
 
 workflows:
   version: 2.1
-  jobs:
-    - test
+  test-and-coverage:
+    jobs:
+      - test
