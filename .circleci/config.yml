@@ -1,7 +1,11 @@
+version: 2.1
+
+orbs: 
+  node: circleci/node@2.1.1
+  codecov: codecov/codecov@1.0.2
+
 jobs:
   test:
-    docker:
-      - image: circleci/node:dubnium
     steps:
       - checkout
       - restore_cache:
@@ -20,14 +24,14 @@ jobs:
             - react-native/node_modules
       - run: yarn workspace @app-up/network test --coverage
       - run: yarn workspace @app-up/react-native test --coverage
-      - store_artifacts:
-          path: packages/network/coverage
-      - store_artifacts:
-          path: packages/react-native/coverage
-
+      - codecov/upload:
+          file: packages/network/coverage
+          upload_name: network
+      - codecov/upload:
+          file: packages/react-native/coverage
+          upload_name: react-native
 
 workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - test
+  version: 2.1
+  jobs:
+    - test
