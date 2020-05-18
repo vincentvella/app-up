@@ -1,23 +1,12 @@
-# @appup/react-native
+# AppUp
 
-React Native utility for connecting to the AppUp service
+[![Coverage Status](https://coveralls.io/repos/github/vincentvella/app-up/badge.svg?branch=master)](https://coveralls.io/github/vincentvella/app-up?branch=master)
 
-## Installation
-
-```sh
-npm install @appup/react-native
-```
-
-## Usage
-
-```js
-import ReactNative from "@appup/react-native";
-
-// ...
-
-const deviceName = await ReactNative.getDeviceName();
-```
+Data as a service platform connection libraries. These utility packages can be used to connect the user to the platform with little outside network configuration.
 
 ## License
-
 MIT
+
+#
+
+(feel free to submit a PR)
