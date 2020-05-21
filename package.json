@@ -20,6 +20,9 @@
     "typescript-network": "yarn workspace @app-up/network typescript",
     "typescript-react-native": "yarn workspace @app-up/react-native typescript",
     "typescript": "run-p typescript-*",
+    "prepare-network": "yarn workspace @app-up/network prepare",
+    "prepare-react-native": "yarn workspace @app-up/react-native prepare",
+    "prepare": "run-p prepare-*",
     "lint": "eslint --ext .js,.ts,.tsx packages/*/src/*"
   },
   "devDependencies": {

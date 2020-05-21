@@ -24,6 +24,7 @@ jobs:
             - example/node_modules
             - network/node_modules
             - react-native/node_modules
+      - run: yarn prepare
       - run: yarn workspace @app-up/network test --coverage
       - run: yarn workspace @app-up/react-native test --coverage
       - codecov/upload:
