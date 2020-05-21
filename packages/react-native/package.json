@@ -22,16 +22,21 @@
     "react-native"
   ],
   "dependencies": {
-    "@app-up/network": "0.1.0"
+    "@app-up/network": "0.1.0",
+    "query-string": "^6.12.1"
   },
   "devDependencies": {
     "@react-native-community/bob": "^0.14.0",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@testing-library/react-native": "^5.0.3",
     "@types/jest": "^25.1.2",
     "@types/react": "^16.9.19",
     "@types/react-native": "0.61.10",
+    "fetch-mock": "^9.9.0",
     "jest": "^25.1.0",
     "react": "~16.9.0",
     "react-native": "~0.61.5",
+    "react-test-renderer": "16.9.0",
     "typescript": "^3.7.5"
   },
   "peerDependencies": {
@@ -39,9 +44,11 @@
     "react-native": "*"
   },
   "jest": {
-    "preset": "react-native",
-    "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
+    "preset": "@testing-library/react-native",
+    "transformIgnorePatterns": [
+      "/node_modules/(?!react-native|@testing-library/react-native).+\\.js$"
+    ],
+    "testPathIgnorePatterns": [
       "<rootDir>/lib/"
     ]
   },

@@ -1,9 +1,16 @@
 import * as React from 'react';
 import makeRequest from '@app-up/network';
 
+type AppUpResponse =
+  | {
+      upToDate: boolean;
+      version: string;
+    }
+  | undefined;
+
 function useAppUp(appId: string, platform: string) {
   const [loading, setLoading] = React.useState(false);
-  const [data, setData] = React.useState(undefined);
+  const [data, setData] = React.useState<AppUpResponse>(undefined);
 
   React.useEffect(() => {
     let mounted = true;
