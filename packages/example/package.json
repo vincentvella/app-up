@@ -11,7 +11,7 @@
     "postinstall": "expo-yarn-workspaces postinstall"
   },
   "dependencies": {
-    "@app-up/react-native": "0.1.0",
+    "@app-up/react-native": "1.0.0",
     "@expo/vector-icons": "^10.0.0",
     "@react-native-community/masked-view": "0.1.6",
     "@react-navigation/core": "^5.3.1",
