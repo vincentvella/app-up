@@ -25,6 +25,9 @@ const Home = () => {
       <Button onPress={() => navigation.navigate('custom')}>
         Custom Component
       </Button>
+      <Button onPress={() => navigation.navigate('ss-validation')}>
+        Server-Side Version Validation
+      </Button>
     </View>
   );
 };

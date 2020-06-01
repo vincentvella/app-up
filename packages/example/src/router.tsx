@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './home';
 import ClassComponent from './class-component';
 import CustomComponent from './custom-component';
+import ProvidedVersion from './provided-version';
 import FunctionalComponent from './functional-component';
 
 const Stack = createStackNavigator();
@@ -30,6 +31,14 @@ const Router = () => {
           name="custom"
           component={CustomComponent}
           options={{ headerTitle: 'Custom', headerBackTitle: 'Examples' }}
+        />
+        <Stack.Screen
+          name="ss-validation"
+          component={ProvidedVersion}
+          options={{
+            headerTitle: 'Server-Side Validation',
+            headerBackTitle: 'Examples',
+          }}
         />
       </Stack.Navigator>
     </>

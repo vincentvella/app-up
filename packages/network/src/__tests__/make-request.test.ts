@@ -16,6 +16,16 @@ describe('Test Request', () => {
     expect(appUpResponse.version).toBe('1.0.0');
   });
 
+  it('Server-Side Version Check Success with Account', async () => {
+    const appId = 'testId';
+    const platform = 'ios';
+    const version = '1.0.0';
+    const query = queryString.stringify({ platform, appId, version });
+    fetchMock.get(baseUrl + '?' + query, { version: '1.0.0' });
+    const appUpResponse = await makeRequest(appId, platform, version);
+    expect(appUpResponse.version).toBe('1.0.0');
+  });
+
   it('Test Request Success without Account', async () => {
     const appId = 'no account';
     const platform = 'ios';

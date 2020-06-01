@@ -22,6 +22,20 @@ describe('Test useAppUp hook', () => {
     expect(result.current.data).toStrictEqual({ version: '1.0.0' });
   });
 
+  it('Test SS Version Check with Account', async () => {
+    const appId = 'testId';
+    const platform = 'ios';
+    const version = '1.0.0';
+    const query = queryString.stringify({ platform, appId, version });
+    fetchMock.get(baseUrl + '?' + query, { version: '1.0.0' });
+    const { result, waitForNextUpdate } = renderHook(() =>
+      useAppUp(appId, platform, version)
+    );
+    expect(result.current.loading).toBeTruthy();
+    await waitForNextUpdate();
+    expect(result.current.data).toStrictEqual({ version: '1.0.0' });
+  });
+
   it('Test Request Success without Account', async () => {
     const appId = 'no account';
     const platform = 'ios';

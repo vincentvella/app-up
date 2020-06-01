@@ -8,14 +8,14 @@ type AppUpResponse =
     }
   | undefined;
 
-function useAppUp(appId: string, platform: string) {
+function useAppUp(appId: string, platform: string, version?: string) {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState<AppUpResponse>(undefined);
 
   React.useEffect(() => {
     let mounted = true;
     setLoading(true);
-    makeRequest(appId, platform).then((appData: any) => {
+    makeRequest(appId, platform, version).then((appData: any) => {
       if (mounted) {
         setData(appData);
         setLoading(false);

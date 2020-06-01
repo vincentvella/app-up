@@ -1,11 +1,11 @@
 export const baseUrl = 'https://sync.appup.dev/sync';
 
-async function makeRequest(appId: string, platform: string) {
+async function makeRequest(appId: string, platform: string, version?: string) {
   try {
     if (platform === 'android' || platform === 'ios') {
-      const response = await fetch(
-        `${baseUrl}?appId=${appId}&platform=${platform}`
-      );
+      let queryUrl = `${baseUrl}?appId=${appId}&platform=${platform}`;
+      if (version) queryUrl += `&version=${version}`;
+      const response = await fetch(queryUrl);
       // Return response from server directly
       if (response.ok === true) {
         const responseJson = await response.json();
