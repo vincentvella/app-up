@@ -5,6 +5,7 @@ type AppUpResponse =
   | {
       upToDate: boolean;
       version: string;
+      url?: string;
     }
   | undefined;
 
@@ -24,7 +25,7 @@ function useAppUp(appId: string, platform: string, version?: string) {
     return () => {
       mounted = false;
     };
-  }, [appId, platform]);
+  }, [appId, platform, version]);
   return { data, loading };
 }
 

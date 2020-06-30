@@ -5,6 +5,7 @@ import ClassComponent from './class-component';
 import CustomComponent from './custom-component';
 import ProvidedVersion from './provided-version';
 import FunctionalComponent from './functional-component';
+import AppStoreRedirect from './appstore-redirect';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,11 @@ const Router = () => {
           name="custom"
           component={CustomComponent}
           options={{ headerTitle: 'Custom', headerBackTitle: 'Examples' }}
+        />
+        <Stack.Screen
+          name="appstore-redirect"
+          component={AppStoreRedirect}
+          options={{ headerTitle: 'Redirect', headerBackTitle: 'Examples' }}
         />
         <Stack.Screen
           name="ss-validation"

@@ -24,4 +24,4 @@ class Class extends React.Component<{ loading: boolean; data: any }> {
   }
 }
 
-export default withAppUp('8rDOMaWCWSywEFmaSbZl', Platform.OS)(Class);
+export default withAppUp('5ef1b6c0662c92002c41b3aa', Platform.OS)(Class);

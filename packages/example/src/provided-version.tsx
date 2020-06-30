@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 
 const Functional = () => {
   const { loading, data } = useAppUp(
-    '8rDOMaWCWSywEFmaSbZl',
+    '5ef1b6c0662c92002c41b3aa',
     Platform.OS,
     '1.1.0'
   );

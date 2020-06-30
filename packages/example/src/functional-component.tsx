@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 });
 
 const Functional = () => {
-  const { loading, data } = useAppUp('8rDOMaWCWSywEFmaSbZl', Platform.OS);
+  const { loading, data } = useAppUp('5ef1b6c0662c92002c41b3aa', Platform.OS);
   return (
     <View style={styles.container}>
       <Text>Functional Component</Text>

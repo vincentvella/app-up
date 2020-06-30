@@ -1,6 +1,6 @@
 {
   "name": "@app-up/react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "React Native utility for connecting to the AppUp service",
   "main": "lib/commonjs/index.js",
@@ -22,7 +22,7 @@
     "react-native"
   ],
   "dependencies": {
-    "@app-up/network": "1.0.0",
+    "@app-up/network": "1.0.1",
     "query-string": "^6.12.1"
   },
   "devDependencies": {
