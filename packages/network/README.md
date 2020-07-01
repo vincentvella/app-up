@@ -15,11 +15,13 @@ yarn add @app-up/network
 
 ## Usage
 ```js
-import makeRequest from "@appup/react-native";
+import makeRequest from '@app-up/network';
 
 // ...
-        const response = await makeRequest(<YOUR_KEY>, <PLATFORM>);
-```
+const response = await makeRequest(<YOUR_KEY>, Platform.OS);
+ ```
+
+## [Example](../example/src/custom-component.tsx)
 
 ## License
 MIT

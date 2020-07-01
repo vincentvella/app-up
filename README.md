@@ -4,11 +4,7 @@
 
 [![vincentvella](https://circleci.com/gh/vincentvella/app-up.svg?style=svg)](https://app.circleci.com/pipelines/github/vincentvella/app-up)
 
-Data as a service platform connection libraries. These utility packages can be used to connect the user to the platform with little outside network configuration.
+AppUp version service connection libraries. These utility packages can be used to connect the user to the platform with little outside network configuration.
 
 ## License
 MIT
-
-#
-
-(feel free to submit a PR)
