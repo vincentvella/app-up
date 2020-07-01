@@ -6,5 +6,11 @@
 
 AppUp version service connection libraries. These utility packages can be used to connect the user to the platform with little outside network configuration.
 
+## [Examples](./packages/example/README.md)
+
+## [@app-up/react-native](./packages/react-native/README.md)
+
+## [@app-up/network](./packages/network/README.md)
+
 ## License
 MIT
