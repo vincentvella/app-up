@@ -1,37 +1,72 @@
-## Welcome to GitHub Pages
+# AppUp
 
-You can use the [editor on GitHub](https://github.com/vincentvella/app-up/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[![codecov](https://codecov.io/gh/vincentvella/app-up/branch/master/graph/badge.svg)](https://codecov.io/gh/vincentvella/app-up)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![vincentvella](https://circleci.com/gh/vincentvella/app-up.svg?style=svg)](https://app.circleci.com/pipelines/github/vincentvella/app-up)
 
-### Markdown
+AppUp's service is easy to connect to from any frontend service but we have a few built-in solutions prepared:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# React/React Native/Expo
 
-```markdown
-Syntax highlighted code block
+There's several different examples how to connect to the service currently on my [Github](https://github.com/vincentvella/app-up/tree/master/packages/example/src).
 
-# Header 1
-## Header 2
-### Header 3
+## Installation
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+npm install @app-up/react-native
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```bash
+yarn add @app-up/react-native
+```
 
-### Jekyll Themes
+## React Hook  [🔗](https://github.com/vincentvella/app-up/blob/master/packages/example/src/functional-component.tsx)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vincentvella/app-up/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Functional Component Example
 
-### Support or Contact
+```jsx
+const Functional = () => {
+  const { loading, data } = useAppUp(<YOUR_KEY_HERE>, Platform.OS, <CURRENT_APP_VERSION>);
+  return ...;
+};
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Arguments (in order)](https://www.notion.so/cd31f2e1654d4aa8983524787ba211ac)
+
+## Higher Order Component [🔗](https://github.com/vincentvella/app-up/blob/master/packages/example/src/class-component.tsx)
+
+HOC Wrapped Class Component Example
+
+```jsx
+class Component extends React.Component {
+	render () {
+    const { loading, data } = this.props;
+    return ...;
+  }
+};
+
+export default withAppUp(
+  <YOUR_KEY_HERE>,
+  Platform.OS,
+  <CURRENT_APP_VERSION>
+)(Component);
+```
+
+### Arguments (same as above)
+
+## Not using React? [🔗](https://github.com/vincentvella/app-up/blob/master/packages/example/src/custom-component.tsx)
+
+You can use the @app-up/network package to connect directly to the service without the use of a react-specific component.
+
+## Installation
+
+```bash
+npm install @app-up/network
+```
+
+```bash
+yarn add @app-up/network
+```
+
+## License
+MIT
